@@ -4,7 +4,7 @@
 Summary:          Secure PIN handling using NSS crypto
 Name:             svrcore
 Version:          4.0.4
-Release:          5.1%{?dist}
+Release:          5.1%{?dist}.goose.1
 License:          MPLv1.1 or GPLv2+ or LGPLv2+
 URL:              http://www.mozilla.org/projects/security/pki/
 Group:            Development/Libraries
@@ -74,6 +74,9 @@ rm -f $RPM_BUILD_ROOT%{_libdir}/libsvrcore.la
 %{_includedir}/svrcore.h
 
 %changelog
+* Mon Apr 30 2012 Clint Savage <herlo@gooseproject.org> - 4.0.4-5.1.goose.1
+- Bump for i686 build
+
 * Mon Nov 30 2009 Dennis Gregorovic <dgregor@redhat.com> - 4.0.4-5.1
 - Rebuilt for RHEL 6
 
